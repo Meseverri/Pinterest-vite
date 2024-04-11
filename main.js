@@ -7,4 +7,6 @@ import {header} from "/src/views/header/header"
 const app$$=document.querySelector("#app")
 
 app$$.innerHTML+=header()
-// getQuery();
+
+const input$$=app$$.querySelector(".search>input");
+console.log(input$$)

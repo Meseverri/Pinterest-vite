@@ -1,5 +1,5 @@
 .logo{
-    width: 20px;
+    width: 1px;
     display: flex;
     color-scheme: none
   ; 
@@ -21,7 +21,7 @@
   }
   /*  */
   .search {
-    width: 50%px;
+    width: 50%;
     background-color: rgb(243, 238, 238);
     border-radius: 25px;
     padding: 10px;
@@ -29,7 +29,9 @@
     align-items: center;
     margin-left:10px ;
   }
-  
+  input{
+    width: 100%;
+  }
   input[type=text] {
     border: none;
     outline: none;
@@ -51,10 +53,4 @@
   
   svg>path {
     width:30px
-  }
-  section{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: auto-fill;
-    grid-gap: 10px;
   }
