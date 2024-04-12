@@ -14,7 +14,7 @@ export const getQuery = (search$) => {
     .getPhotos({
       query: search$,
       page: page$,
-      perPage: 10,
+      perPage: 20,
     })
     .then((res) => {
       // res.response.results;

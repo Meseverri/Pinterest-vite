@@ -1,8 +1,8 @@
 import "./card.css"
 export const card=(src,description)=>{
-    return `<div class="card">
+    return `<a class="card">
     <img src="${src}" alt="${description}">
-    </div>`
+    </a>`
 }
 // <div class="content">
 // <a href="#" class="link">Ver más</a>

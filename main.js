@@ -7,7 +7,8 @@ import {header} from "/src/views/header/header"
 const app$$=document.querySelector("#app")
 
 app$$.innerHTML+=header()
-getQuery()
+
+
 const butonSearch$$=app$$.querySelector(".search>button");
 const input$$=app$$.querySelector(".search>input");
 butonSearch$$.addEventListener("click",()=>{
