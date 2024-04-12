@@ -8,7 +8,7 @@ export const header=()=>{
   <img src="/0a13f3d326a26f754ce06d36c0ca284e.jpg" alt="logo">
 </div>
 <div class="search">
-  <input type="text" placeholder="Buscar">
+  <input id="search" type="text" placeholder="Buscar">
   <button type="submit">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
     viewBox="0 0 16 16">

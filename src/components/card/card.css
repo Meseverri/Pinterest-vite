@@ -7,7 +7,8 @@
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    /* object-fit: cover; */
+    object-fit: cover;
+    position:relative
 
 }
 
@@ -15,7 +16,7 @@
 .card img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
   
 /* Estilos para el contenido dentro de la carta */
@@ -25,3 +26,15 @@
 
 
 
+.card_info_hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left:0;
+}
+
+.card:hover .card_info_hover {
+    opacity: 1;
+}

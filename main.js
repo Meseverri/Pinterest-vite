@@ -8,11 +8,11 @@ const app$$=document.querySelector("#app")
 
 app$$.innerHTML+=header()
 
-
+getQuery("cat")
 const butonSearch$$=app$$.querySelector(".search>button");
 const input$$=app$$.querySelector(".search>input");
-butonSearch$$.addEventListener("click",()=>{
-    getQuery(input$$.value)
+// butonSearch$$.addEventListener("click",()=>{
+//     getQuery(input$$.value)
     
-})
+// })
 
