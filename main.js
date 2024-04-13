@@ -8,7 +8,7 @@ const app$$=document.querySelector("#app")
 
 app$$.innerHTML+=header()
 
-getQuery("cat")
+getQuery("Random")
 const butonSearch$$=app$$.querySelector(".search>button");
 const input$$=app$$.querySelector(".search>input");
 // butonSearch$$.addEventListener("click",()=>{

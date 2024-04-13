@@ -19,13 +19,14 @@ export const getQuery = (search$) => {
     .then((res) => {
       // res.response.results;
       const section$$ = document.createElement("section");
-      
       res.response.results.forEach((elem) => {
+        // console.log(elem)
 
-        section$$.innerHTML += card(elem.urls.regular, elem.description);
+        section$$.append(card(elem.urls.regular, elem.description,elem.id,elem.liked_by_user));
       });
       const app$$=document.querySelector("#app");
       app$$.appendChild(section$$);
+      
     })
     
     ;
