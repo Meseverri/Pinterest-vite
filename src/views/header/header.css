@@ -1,7 +1,8 @@
 .logo{
     width: 1px;
     display: flex;
-    color-scheme: none
+    color-scheme: none;
+    cursor:pointer
   ; 
   
   }

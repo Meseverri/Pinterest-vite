@@ -8,11 +8,16 @@ const app$$=document.querySelector("#app")
 
 app$$.innerHTML+=header()
 
-getQuery("Random")
 const butonSearch$$=app$$.querySelector(".search>button");
 const input$$=app$$.querySelector(".search>input");
-// butonSearch$$.addEventListener("click",()=>{
-//     getQuery(input$$.value)
+butonSearch$$.addEventListener("click",()=>{
+    getQuery(input$$.value)
     
-// })
+})
+
+const divLogo$$=document.querySelector(`.logo`);
+divLogo$$.addEventListener('click', ()=>{
+    getQuery("Random");
+
+})
 
