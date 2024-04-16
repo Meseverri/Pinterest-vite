@@ -5,7 +5,7 @@ export const header=()=>{
 
     return`<header>
 <div class="logo">
-  <img src="/0a13f3d326a26f754ce06d36c0ca284e.jpg" alt="logo">
+  <img class="logoIMG" src="/0a13f3d326a26f754ce06d36c0ca284e.jpg" alt="logo">
 </div>
 <div class="search">
   <input id="search" type="text" placeholder="Buscar">
