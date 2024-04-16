@@ -36,6 +36,8 @@ export const section = () => {
   };
 
   const divLogo$$ = document.querySelector(`.logo`);
+  searchValue = "Random";
+  getQuery(searchValue, 1);
   divLogo$$.addEventListener("click", () => {
     searchValue = "Random";
     getQuery(searchValue, 1);

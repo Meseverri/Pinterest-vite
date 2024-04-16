@@ -1,5 +1,6 @@
 import { createApi } from "unsplash-js";
 import { card } from "/src/components/card/card";
+import { notFound } from "/src/views/notFound/notFound";
 
 export const unsplash$ = createApi({
   accessKey: "NU48erynbQuPZPVVaDGAuucw6xEOcALOa2xmc6wOUSo",
@@ -8,7 +9,6 @@ export const unsplash$ = createApi({
 export const getQuery = (search$, page$) => {
   // const search$ = "tree";
   // const page$ = 1;
-  let fotosLinks = [];
 
   unsplash$.search
     .getPhotos({
@@ -37,6 +37,10 @@ export const getQuery = (search$, page$) => {
             )
           );
         });
+        if(section$$.innerHTML===""){
+          section$$.innerHTML=notFound(search$)
+
+        }
         app$$.appendChild(section$$);
       } else {
         const section$$ = document.querySelector("section");

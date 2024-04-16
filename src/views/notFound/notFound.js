@@ -1,8 +1,8 @@
-import "/notFound.css"
+import "./notFound.css"
 
-const notFound=(input)=>{
+export const notFound=(input="")=>{
     return `<div class="notFound">
-    <h2>No se encontraron resultados para:${input}</h2>
+    <h2>No se encontraron resultados para: "${input}"</h2>
     <p>Prueba haciendo otra busqueda</p>
   </div>`
 }
